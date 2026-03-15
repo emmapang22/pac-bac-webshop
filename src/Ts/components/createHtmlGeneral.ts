@@ -1,6 +1,6 @@
 import type { Product } from "../../models/ProductType";
 import type { ProductCart } from "../../models/ProductCartType";
-import { openOneProduct } from "../../pages/oneProduct/openOneProduct";
+import { openOneProduct } from "../../pages/OneProduct/openOneProduct";
 
 export const createHTMLGeneral = (item: Product | ProductCart) => {
   //Skapar Basic HTML

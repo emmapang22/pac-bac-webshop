@@ -2,7 +2,7 @@ import "../../scss/style.scss";
 import { createHTML } from "./createHTMLShop";
 import type { Product } from "../../models/ProductType";
 import { loadProductHero } from "../../Ts/productHero";
-import { getProduct } from "../../services/productServices";
+import { getProduct } from "../../Services/productServices";
 
 //Detta är för produksidan med alla produkter = shop.html
 

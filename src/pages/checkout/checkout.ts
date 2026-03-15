@@ -1,7 +1,6 @@
 import { theTotal } from "../../cart/theTotal";
 import type { ProductCart } from "../../models/ProductCartType";
 
-
 //  Uppdaterar shoppingBag och renderar om checkout
 const updateCartCheckout = (bag: ProductCart[]) => {
   localStorage.setItem("ShoppingBag", JSON.stringify(bag));
@@ -25,7 +24,7 @@ export const createHtmlCheckout = () => {
   // Totalt antal produkter
   const totalQuantity = shoppingBag.reduce(
     (sum, product) => sum + product.quantity,
-    0
+    0,
   );
 
   // Rensa app innan render
@@ -191,7 +190,7 @@ export const createHtmlCheckout = () => {
     createInput("Efternamn"),
     createInput("Adress"),
     createInput("Postnummer"),
-    createInput("Ort")
+    createInput("Ort"),
   );
 
   /* ================= FRAKT ================= */
@@ -223,7 +222,7 @@ export const createHtmlCheckout = () => {
 
   shippingOptions.append(
     createShipping("PostNord"),
-    createShipping("Hemleverans")
+    createShipping("Hemleverans"),
   );
 
   /* ================= BETALNING ================= */
@@ -252,7 +251,7 @@ export const createHtmlCheckout = () => {
   ["Kort", "Klarna", "Swish", "PayPal", "Google Pay", "Apple Pay"].forEach(
     (method) => {
       paymentOptions.appendChild(createPaymentOption(method));
-    }
+    },
   );
   checkoutForm.append(paymentTitle, paymentOptions);
 
@@ -277,9 +276,8 @@ export const createHtmlCheckout = () => {
       return;
     }
     alert("Tack för ditt köp!");
-   localStorage.removeItem("ShoppingBag");
-   createHtmlCheckout();
-
+    localStorage.removeItem("ShoppingBag");
+    createHtmlCheckout();
   });
   const finalDividerTop = document.createElement("hr");
   const finalDividerBottom = document.createElement("hr");
@@ -295,6 +293,6 @@ export const createHtmlCheckout = () => {
     finalDividerTop,
     finalTotalDiv,
     finalDividerBottom,
-    submitButton
+    submitButton,
   );
 };

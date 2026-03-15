@@ -1,7 +1,6 @@
 import { addToCart } from "../../../cart/addToCart";
 import type { Product } from "../../../models/ProductType";
 
-
 export function createProductItemCard(
   product: Product,
   similarProductsContainer: HTMLElement,

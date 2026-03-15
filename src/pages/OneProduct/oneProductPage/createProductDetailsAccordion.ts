@@ -9,8 +9,6 @@ export function createProductDetailsAccordion(
   container.id = "accordionContainer";
 
   accordionDetails.forEach((detailsItem, i) => {
-    // Dynamic IDs that corresponds with the items position in the array
-    // Good to have instead of using text that might have special characters or spaces
     const headingId = `heading-${i}`;
     const collapseId = `collapse-${i}`;
 

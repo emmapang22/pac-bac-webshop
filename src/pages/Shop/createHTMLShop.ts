@@ -1,5 +1,5 @@
 import type { Product } from "../../models/ProductType";
-import { openOneProduct } from "../oneProduct/openOneProduct";
+import { openOneProduct } from "../OneProduct/openOneProduct";
 import { addToCart } from "../../cart/addToCart";
 
 export const createHTML = (theProducts: Product[]) => {

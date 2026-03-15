@@ -9,7 +9,7 @@ import "./scss/style.scss";
 import { loadHeader } from "./Ts/layout/loadHeader";
 import { loopPopular } from "./pages/home/loopPopular";
 import { loopNew } from "./pages/home/loopNew";
-import { sortProducts } from "./pages/shop/sortProducts";
+import { sortProducts } from "./pages/Shop/sortProducts";
 
 const heroButton = document.getElementById("heroCta");
 
