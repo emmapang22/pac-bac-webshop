@@ -3,8 +3,6 @@ import { openOneProduct } from "../OneProduct/openOneProduct";
 import { addToCart } from "../../cart/addToCart";
 
 export const createHTML = (theProducts: Product[]) => {
-  //Detta är för shop Main
-
   const productsDiv = document.getElementById("products-grid");
   if (productsDiv) {
     productsDiv.innerHTML = "";

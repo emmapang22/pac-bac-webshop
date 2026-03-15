@@ -9,8 +9,6 @@ import { isInWishlist } from "./wishlist/isInWishlist";
 import { removeFromWislistArray } from "./wishlist/removeFromWislistArray";
 
 export const createHTMLOneProductPage = (item: Product) => {
-  //Skapar Basic HTML
-
   const oneProductContainer = document.createElement("div");
 
   const oneProductImageContainer = document.createElement("div");
@@ -76,7 +74,6 @@ export const createHTMLOneProductPage = (item: Product) => {
   const similarProductsHeading = document.createElement("h2");
   similarProductsHeading.textContent = "Liknande produkter";
 
-  // Create product cards with similar category
   createSimilarProductsSection(item, similarProductsContainer);
 
   oneProductContainer.className = "oneProductContainer";
@@ -89,31 +86,24 @@ export const createHTMLOneProductPage = (item: Product) => {
   wishListIcon.id = "wishListIcon";
 
   if (isInWishlist(item.id)) {
-    // if a product already is in the wishlist the heart will already be filled
     wishListIcon.className = " fa-solid fa-heart";
   } else {
-    // if a product is not in the wishlist it will be an unfilled heart
     wishListIcon.className = " fa-regular fa-heart";
   }
 
   wishListIcon.addEventListener("click", () => {
-    // Toggles between unfilled and filled heart each time the user clicks on the heart
     const isFilled = wishListIcon.classList.contains("fa-regular");
     wishListIcon.classList.toggle("fa-regular");
     wishListIcon.classList.toggle("fa-solid");
 
     if (isFilled) {
-      // If the heart gets filled a pop up will show up
       addedToWishlistPopUp();
-      // when it gets filled it will also add the product to an array that will be stored in localStorage
       addToWishlistArray(item);
     } else {
-      // if it's not filled the product will be removed from the array/localStorage
       removeFromWislistArray(item);
     }
   });
 
-  // wishListIcon.addEventListener("click", () => {});
   productPrice.innerHTML = item.price + " kr";
   productPrice.className = "pricetag";
 
@@ -141,7 +131,6 @@ export const createHTMLOneProductPage = (item: Product) => {
   workDayIcon.className = "fa-solid fa-calendar";
   workDayText.textContent = "4-6 arbetsdagars leveranstid";
 
-  // Append elements
   oneProductContainer.append(
     oneProductImageContainer,
     productDetails,

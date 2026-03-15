@@ -10,7 +10,7 @@ export const loadHeader = () => {
   const headerLeftSideContainer = document.createElement("div");
   const hamburgerIcon = document.createElement("i");
   const companyName = document.createElement("a");
-  companyName.href = "http://localhost:5173/";
+  companyName.href = "../../index.html";
   const searchContainer = document.createElement("div");
   const searchInput = document.createElement("input");
 

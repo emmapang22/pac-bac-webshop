@@ -29,15 +29,14 @@ export function createProductItemCard(
   buttonBuy.className = "similarProductBuyButton btn btn-primary";
 
   buttonBuy.addEventListener("click", () => {
-    //Om du klickar buy så läggs backPack i kundkorg
     addToCart(product);
   });
 
   imgContainer.addEventListener("click", () => {
     //openOneProduct(product);
-    const theBag = JSON.stringify(product); //Gör till string
-    localStorage.setItem("TheBag", theBag); //Spara i localStorage
-    window.location.href = "../../../../oneproduct.html"; //Öppna oneproduct sida
+    const theBag = JSON.stringify(product);
+    localStorage.setItem("TheBag", theBag);
+    window.location.href = "../../../../oneproduct.html";
   });
 
   extraInfo.append(name, price, buttonBuy);

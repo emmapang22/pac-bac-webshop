@@ -8,7 +8,6 @@ export async function createSimilarProductsSection(
 ): Promise<void> {
   similarProductsContainer.id = "similarProductsContainer";
 
-  // Get all the products in the product array
   const theProducts: Product[] = await getProduct();
 
   // Removed the same product that is already shown on one product page from the array
