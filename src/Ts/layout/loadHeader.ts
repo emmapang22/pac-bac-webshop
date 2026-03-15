@@ -4,34 +4,24 @@ export const loadHeader = () => {
   const overlay = document.getElementById("hamburgerOverlay");
   const headerContainer = document.getElementById("headerContainer");
 
-  // SMALL BANNER ABOVE MAIN HEADER
   const aboveHeader = document.createElement("div");
   const infoTextHeader = document.createElement("p");
-  // SMALL BANNER ENDS HERE
-
-  // MAIN HEADER STARTS HERE
   const mainHeader = document.createElement("div");
-  // Left side
   const headerLeftSideContainer = document.createElement("div");
   const hamburgerIcon = document.createElement("i");
   const companyName = document.createElement("a");
   companyName.href = "http://localhost:5173/";
-  // Search container will be shown on larger screens
   const searchContainer = document.createElement("div");
   const searchInput = document.createElement("input");
 
-  // Right side
   const headerRightSideContainer = document.createElement("div");
   const searchIcon = document.createElement("i");
   const userIcon = document.createElement("i");
   const heartIcon = document.createElement("i");
   const shoppingCartIcon = document.createElement("i");
   shoppingCartIcon.id = "theCartIcon";
-  // MAIN HEADER ENDS HERE
 
-  // UNDER HEADER STARTS HERE
   const underHeader = document.createElement("div");
-  // Left side
   const underHeaderLeftSide = document.createElement("nav");
   const newProductsLink = document.createElement("a");
   const bestsellerLink = document.createElement("a");
@@ -50,23 +40,18 @@ export const loadHeader = () => {
   const accessoriesLink = document.createElement("a");
   const chevronDownIconAccessories = document.createElement("i");
 
-  // Right side
   const underHeaderRightSide = document.createElement("nav");
   const aboutUsLink = document.createElement("a");
   const sustainablityLink = document.createElement("a");
   const contactUsLink = document.createElement("a");
-  // UNDER HEADER ENDS HERE
 
-  //
   aboveHeader.id = "above-header";
   infoTextHeader.textContent = "Fri frakt över 599 kr";
 
-  //
   mainHeader.id = "header";
 
   headerLeftSideContainer.className = "header-left-side";
   hamburgerIcon.className = "hamburger-menu fa-solid fa-bars";
-  // hamburgerIcon.addEventListener("click", openHamburgerMenu);
   openHamburgerMenu();
   hamburgerIcon.addEventListener("click", () => {
     overlay?.classList.toggle("close-overlay");
@@ -85,13 +70,9 @@ export const loadHeader = () => {
   userIcon.className = "fa-solid fa-user";
   heartIcon.className = "fa-solid fa-heart";
   shoppingCartIcon.className = "fa-solid fa-cart-shopping";
-  //
 
-  // UNDER HEADER STARTS HERE
-  // under header will be shown on larger screens
   underHeader.id = "under-header";
 
-  // Left side
   underHeaderLeftSide.className = "under-header-left-side";
   newProductsLink.href = "";
   newProductsLink.textContent = "Nyheter";
@@ -119,7 +100,6 @@ export const loadHeader = () => {
   accessoriesLink.textContent = "Accessoarer";
   chevronDownIconAccessories.className = "fa-solid fa-chevron-down";
 
-  // Right side
   underHeaderRightSide.className = "under-header-right-side";
   aboutUsLink.href = "";
   aboutUsLink.textContent = "Om oss";
@@ -127,9 +107,6 @@ export const loadHeader = () => {
   sustainablityLink.textContent = "Hållbarhet";
   contactUsLink.href = "";
   contactUsLink.textContent = "Kontakta oss";
-  // UNDER HEADER ENDS HERE
-
-  // AppendChild
 
   underHeaderRightSide.append(aboutUsLink, contactUsLink);
 

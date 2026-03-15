@@ -17,7 +17,6 @@ heroButton?.addEventListener("click", () => {
   window.location.href = "../shop.html";
 });
 
-// Load main header
 const header = document.getElementById("headerContainer");
 
 if (header) {
@@ -30,24 +29,17 @@ if (header) {
     window.location.href = "/shop.html";
   });
   //allBackpackslink to shop ends here
-} else {
-  console.error("Header element with the id 'headerContainer' not found");
 }
 
-// Load Product Card
 document.addEventListener("DOMContentLoaded", () => {
   loadProductCard();
 });
 
-// Load footer
 const footer = document.getElementById("footer");
 if (footer) {
   loadFooter();
-} else {
-  console.error("Footer element with the id 'Footer' not found");
 }
 
-//Newsletter
 const newsletter = document.getElementById("newsletter");
 
 if (newsletter) {
@@ -57,7 +49,6 @@ if (newsletter) {
 loopPopular();
 loopNew();
 
-// cartIcon
 const theIconCart = document.getElementById("theCartIcon");
 theIconCart?.addEventListener("click", createCart);
 
@@ -74,7 +65,6 @@ if (checkoutHtml) {
 }
 //Checkout ends here
 
-// Sort button in shop page
 const sortBtn = document.getElementById("sortProductsBtn");
 
 if (sortBtn) {
