@@ -9,7 +9,7 @@
   justify-content: center;
   overflow: hidden;
 
-  background-image: url(../../images/mobile_hero_image.jpg);
+  background-image: url(/src/assets/images/mobile_hero_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -29,14 +29,16 @@
       font-size: v.$h1-sm;
       font-family: v.$font-heading;
       color: v.$white;
-      text-shadow: 0.125rem 0.125rem 0.125rem rgb(0, 0, 0),
-        0 0 1.5rem rgb(0, 0, 0), 0 0 0.3rem rgb(0, 0, 0);
+      text-shadow:
+        0.125rem 0.125rem 0.125rem rgb(0, 0, 0),
+        0 0 1.5rem rgb(0, 0, 0),
+        0 0 0.3rem rgb(0, 0, 0);
     }
   }
 
   @media (min-width: 768px) {
     height: 32rem;
-    background-image: url(../../images/hero_image.jpg);
+    background-image: url(/src/assets/images/hero_image.jpg);
   }
 
   @media (min-width: 1024px) {

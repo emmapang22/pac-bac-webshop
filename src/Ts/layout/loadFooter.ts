@@ -60,27 +60,27 @@ export const loadFooter = () => {
 
           <div class="payments">
             <div class="logo-container">
-              <img src="../../images/payments_img/swish_logo.svg" alt="swish logo">
+              <img src="/payments_icons/swish_logo.svg" alt="swish logo">
             </div>
 
             <div class="logo-container" id="klarna-logo">
-              <img src="../../images/payments_img/klarna_logo.png" alt="klarna logo">
+              <img src="/payments_icons/klarna_logo.png" alt="klarna logo">
             </div>
 
             <div class="logo-container">
-              <img src="../../images/payments_img/BankID_logo.svg" alt="bank id logo">
+              <img src="/payments_icons/BankID_logo.svg" alt="bank id logo">
             </div>
 
             <div class="logo-container">
-              <img src="../../images/payments_img/mastercard_logo.svg" alt="mastercard logo">
+              <img src="/payments_icons/mastercard_logo.svg" alt="mastercard logo">
             </div>
 
             <div class="logo-container">
-              <img src="../../images/payments_img/google_pay_logo.svg" alt="google pay logo">
+              <img src="/payments_icons/google_pay_logo.svg" alt="google pay logo">
             </div>
 
             <div class="logo-container">
-              <img src="../../images/payments_img/apple_pay_logo.svg" alt="apple pay logo">
+              <img src="/payments_icons/apple_pay_logo.svg" alt="apple pay logo">
             </div>
           </div>
         </div>
