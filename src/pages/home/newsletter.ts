@@ -19,6 +19,7 @@ export const loadNewsletter = () => {
   /* Email input */
   const emailInput = document.createElement("input");
   emailInput.type = "email";
+  emailInput.id = "newsletterEmail";
   emailInput.placeholder = "Din e-postadress";
   emailInput.required = true;
 
