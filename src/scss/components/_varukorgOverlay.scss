@@ -56,7 +56,6 @@
   padding: 0.25rem 0.5rem;
   border-radius: v.$rounded-corner;
   transition: 0.2s ease;
-
 }
 
 #overlay button:hover {
@@ -70,6 +69,7 @@
   gap: 0.5rem;
   padding: 0.5rem 0;
   border-bottom: 1px solid v.$light-grey;
+  cursor: pointer;
 }
 
 /* Produktbild */
@@ -108,9 +108,8 @@
   font-weight: v.$weight-semibold-heading;
 }
 
-.btnQuantityBtn{
+.btnQuantityBtn {
   align-items: center;
-  
 }
 
 .productContainer button {

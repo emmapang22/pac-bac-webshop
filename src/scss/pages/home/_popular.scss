@@ -1,67 +1,67 @@
 @use "../../base/variables" as v;
 
 #popularHeading {
-    margin: 0% 4% 2% 4%;
-    text-align: center;
-    font-size: v.$h1-sm;
+  margin: 0% 4% 2% 4%;
+  text-align: center;
+  font-size: v.$h1-sm;
 }
-#newHeading {
-    @extend #popularHeading;
-    margin: 4% 4% 2% 4%;
-}
-#popularDiv {
-    display: flex;
-    overflow: scroll;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-color: white;
-    gap: 20px;
-    //padding-bottom: 20px;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0% 8% 4% 8%;
 
-    .productContainerPopular {
+#newHeading {
+  @extend #popularHeading;
+  margin: 4% 4% 2% 4%;
+}
+
+#popularDiv {
+  display: flex;
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: white;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0% 8% 4% 8%;
+
+  .productContainerPopular {
     padding: 20px 0px;
     height: 433px;
-    background-color: whitesmoke;
+    background-color: v.$product-card;
     border-radius: 10px;
-    //width: 500px;
-    border:  grey 2px solid;
+    border: grey 2px solid;
+    cursor: pointer;
 
-    
     .imgContainer {
-    height: 300px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      height: 300px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-        img {
-             border:grey 2px solid;
-             height: 17rem;
-             width: 17rem;
-             border-radius: 4px;
-        }
+      img {
+        border: grey 2px solid;
+        height: 17rem;
+        width: 17rem;
+        border-radius: 4px;
+      }
     }
     .extraInfo {
-    margin: 0% 2%;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
+      margin: 0% 2%;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
 
-    button {
+      button {
         width: 4em;
         align-self: flex-end;
+      }
     }
-    }
+  }
 }
-}
+
 #newDiv {
-    @extend #popularDiv;
+  @extend #popularDiv;
 
-    .productContainerNew {
-        @extend .productContainerPopular;
-    }
-
+  .productContainerNew {
+    @extend .productContainerPopular;
+  }
 }
